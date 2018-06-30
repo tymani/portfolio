@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:700');
+
+body {
+  margin: 0;
+  height: 200vh;
+}
+
+
+.nav-body {
+  height: 15vh;
+  display: flex;
+  font-family: 'Roboto Mono', monospace;
+  font-variant: small-caps;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav-body > div div {
+  margin: 30px;
+}
+
+.nav-logo-icon {
+  width: 100vw;
+}
+
+.nav-logo-icon img {
+  width: 25px;
+  height: 25px;
+  margin: 30px;
+}
+.body {
+  margin: 50px;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.intro-body {
+  margin-bottom: 100px;
+}
+.body-title {
+  font-family: 'Roboto Mono', monospace;
+  font-variant: small-caps;
+  font-size: 17pt;
+}
+
+.intro-text-container {
+  margin-top: 15px;
+}
+
+.intro-text {
+  font-family: sofia-pro, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 35pt;
+  line-height: 1.3;
+}
+
+#intro-text-underscore {
+  display: inline;
+  animation-name: blink;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+  50% {opacity: 0;}
+}
+
+.project-module {
+  display: flex;
+  justify-content: center;
+  margin-top: 75px;
+}
+
+
+.card {
+  border: 2px solid black;
+  position: absolute;
+  background-color: white;
+  width: 60vw;
+  height: 300px;
+}
+
+.project-bottom {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.project-top {
+  box-shadow: 6.5px 5.45px 3px 0px rgba(5,5,5,0.22);
+}
+
+.project-title {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 17pt;
+}
+
+.project-description {
+  
+}
