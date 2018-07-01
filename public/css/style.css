@@ -1,15 +1,20 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700');
 
 body {
   margin: 0;
   height: 200vh;
 }
-
+::selection {
+  background-color: magenta;
+  opacity: 0.2;
+  /* color: #ed1b1b; */
+}
 
 .nav-body {
   height: 15vh;
   display: flex;
   font-family: 'Roboto Mono', monospace;
+  font-weight: 700;
   font-variant: small-caps;
   align-items: center;
 }
@@ -45,8 +50,10 @@ body {
 }
 .body-title {
   font-family: 'Roboto Mono', monospace;
+  font-weight: 700;
   font-variant: small-caps;
   font-size: 17pt;
+  display: inline-block;
 }
 
 .intro-text-container {
@@ -84,23 +91,48 @@ body {
   position: absolute;
   background-color: white;
   width: 60vw;
-  height: 300px;
+  height: 230px;
 }
 
 .project-bottom {
   margin-left: 20px;
   margin-top: 20px;
+  transition: border 0.1s ease-in-out 0s, transform 0.1s ease-in-out 0s;
 }
 
 .project-top {
   box-shadow: 6.5px 5.45px 3px 0px rgba(5,5,5,0.22);
+  transition: border 0.1s ease-in-out 0s, transform 0.1s ease-in-out 0s, box-shadow 0.1s ease-in-out 0s ;
 }
 
 .project-title {
   font-family: 'Roboto Mono', monospace;
+  font-weight: 700;
   font-size: 17pt;
+  margin: 20px;
 }
 
 .project-description {
-  
+
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  font-size: 13pt;
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+
+.project-link {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 700;
+  font-size: 17pt;
+  margin-left: auto;
+  display: block;
+  width: 50px;
+  /* position: absolute; */
+}
+
+.project-link a {
+  color: black;
+  text-decoration: none;
 }
